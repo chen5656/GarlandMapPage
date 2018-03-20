@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Display multiply mapView in one page. Will fit for different size of screens. ">
+  <meta name="author" content="Huajun Chen">
+  <!--<link rel="icon" href="https://www.esri.com/favicon.ico">-->
+
+  <title>Basemap gallery - City of Garland</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://js.arcgis.com/4.6/esri/css/main.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class=" col-12 overflow-hidden relative ">
+        <div id="map0" style="width: 100%; height: 300px;">
+
+        </div>
+        <div class="absolute">
+          <h2>City of Garland</h2>
+          <hr style=" border-color: #b2b2b2;  border-width: 2px;">
+          <div id="search"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row pt-md-5 px-2">
+      <div class="col-md-6 col-sm-12 overflow-hidden pt-3">
+        <div class="bg-light text-dark">
+          <h2 class="text-left py-3 pl-5">Open Street</h2>
+          <div id="map1" style="width: 100%; height: 400px; "></div>
+          <div class="text-right py-2 pr-3">
+            <button class="btn btn-outline-dark" id="showMap1">Show open street map</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12 overflow-hidden  pt-3 ">
+        <div class="bg-blue text-light">
+          <h2 class="text-left py-3 pl-5">Scene View</h2>
+          <div id="map2" style="width: 100%; height: 400px;"></div>
+          <div class="text-right py-2 pr-3">
+            <button class="btn btn-outline-light" id="showMap2">Show the earth</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row pt-md-3 px-2">
+      <div class="col-md-6 col-sm-12 overflow-hidden  pt-3 ">
+        <div class="bg-blue text-light">
+          <h2 class="text-left py-3 pl-5">World Imagery</h2>
+          <div id="map3" style="width: 100%; height: 400px;"></div>
+          <div class="text-right py-2 pr-3">
+            <button class="btn btn-outline-light" id="showMap3">Show world imagery map</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12 overflow-hidden pt-3">
+        <div class="bg-light text-dark">
+          <h2 class="text-left py-3 pl-5">GDC Zoning</h2>
+          <div id="map4" style="width: 100%; height: 400px; "></div>
+          <div class="text-right py-2 pr-3">
+            <button class="btn btn-outline-dark" id="showMap4">Show GDC zoning map</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <footer class="text-center">
+    <hr>
+    <p>@2018, City of Garland</p>
+  </footer>
+  <!-- Bootstrap core JavaScript
+================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.4/holder.min.js"></script>
+
+  <!-- ArcGIS JS -->
+  <script> var dojoConfig = { has: { "esri-promise-compatibility": 1 } }; </script>
+  <script src="https://js.arcgis.com/4.6/"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+  <script src="js/index.js"></script>
+  
+</body>
+
+</html>

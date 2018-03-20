@@ -1,0 +1,24 @@
+.overflow-hidden { overflow: hidden; }
+
+.bg-blue {
+  background-color: #0079c1;
+}
+.bg-green {
+  background-color: #269904;
+}
+
+.bg-grey {  
+  background-color: #b2b2b2;
+}
+
+div.relative {
+    position: relative;
+} 
+
+div.absolute {
+  position: absolute;
+  top: 80px;
+  right: 15px;
+  width:250px;
+  height: 100px;
+}
